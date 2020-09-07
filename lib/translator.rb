@@ -14,7 +14,7 @@ def get_japanese_emoticon(filename, emoticon)
   # code goes here
   file = load_library(filename)
   file.each {|key1, value1|
-    
+
   }
 end
 
