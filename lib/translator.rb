@@ -18,8 +18,8 @@ def get_japanese_emoticon(filename, emoticon)
     if value[:english] == emoticon
       return value[:japanese]
     end
-    return "Sorry, that emoticon was not found"
   }
+  return "Sorry, that emoticon was not found"
 end
 
 def get_english_meaning
@@ -29,8 +29,8 @@ def get_english_meaning
     if value[:japanese] == emoticon
       return key
     end
-    return "Sorry, that emoticon was not found"
   }
+  return "Sorry, that emoticon was not found"
 end
 
 load_library('lib/emoticons.yml')
