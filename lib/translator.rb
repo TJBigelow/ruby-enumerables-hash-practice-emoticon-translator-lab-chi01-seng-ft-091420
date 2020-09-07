@@ -25,7 +25,14 @@ end
 
 def get_english_meaning
   # code goes here
-
+  file = load_library(filename)
+  file.each {|key, value|
+    if value[:japanese] == emoticon
+      return key
+    else
+      return "Sorry, that emoticon was not found"
+    end
+  }
 end
 
 load_library('lib/emoticons.yml')
