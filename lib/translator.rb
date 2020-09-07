@@ -7,13 +7,16 @@ def load_library(filename)
   file.each {|translation, array|
       translator[translation] = {:english => array[0], :japanese => array[1]}
   }
+  puts translator
   translator
 end
 
 def get_japanese_emoticon
   # code goes here
+
 end
 
 def get_english_meaning
   # code goes here
+
 end
