@@ -15,7 +15,7 @@ def get_japanese_emoticon(filename, emoticon)
   file = load_library(filename)
   file.each {|key, value|
     if value[:japanese] == emoticon
-      return key
+      return value
     end
   }
 end
