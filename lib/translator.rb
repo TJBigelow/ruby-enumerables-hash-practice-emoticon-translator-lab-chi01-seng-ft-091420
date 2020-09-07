@@ -1,5 +1,6 @@
 # require modules here
 require "yaml"
+require "pry"
 def load_library(filename)
   # code goes here
   file = YAML.load_file(filename)
@@ -14,8 +15,9 @@ def get_japanese_emoticon(filename, emoticon)
   # code goes here
   file = load_library(filename)
   file.each {|key, value|
+    binding.pry
     if value[:japanese] == emoticon
-      return value
+      return key
     end
   }
 end
