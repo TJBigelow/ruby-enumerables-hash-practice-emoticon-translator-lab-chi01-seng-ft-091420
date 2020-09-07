@@ -28,9 +28,8 @@ def get_english_meaning
   file.each {|key, value|
     if value[:japanese] == emoticon
       return key
-    else
-      return "Sorry, that emoticon was not found"
     end
+    return "Sorry, that emoticon was not found"
   }
 end
 
