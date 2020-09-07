@@ -17,6 +17,8 @@ def get_japanese_emoticon(filename, emoticon)
   file.each {|key, value|
     if value[:english] == emoticon
       return value[:japanese]
+    else
+      return "Sorry, that emoticon was not found"
     end
   }
 end
