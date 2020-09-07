@@ -16,6 +16,7 @@ def get_japanese_emoticon(filename, emoticon)
   file.each {|key, value|
     if value[:japanese] == emoticon
       return key
+    end
   }
 end
 
