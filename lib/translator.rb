@@ -7,7 +7,6 @@ def load_library(filename)
   file.each {|translation, array|
       translator[translation] = {:english => array[0], :japanese => array[1]}
   }
-  puts translator
   translator
 end
 
