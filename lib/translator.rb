@@ -21,4 +21,4 @@ def get_english_meaning
 
 end
 
-load_library(lib/translator.yml)
+load_library('lib/translator.yml')
