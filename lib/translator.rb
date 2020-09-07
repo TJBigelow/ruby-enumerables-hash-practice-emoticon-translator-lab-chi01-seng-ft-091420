@@ -2,8 +2,12 @@
 require "yaml"
 def load_library(filename)
   # code goes here
-  library = YAML.load_file(filename)
-  library
+  file = YAML.load_file(filename)
+  translator = {}
+  file.each {|translation, array|
+      translator[translation] = {:english => array[0], :japanese => array[1]}
+    }
+  }
 end
 
 def get_japanese_emoticon
